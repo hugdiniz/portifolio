@@ -68,6 +68,10 @@ hr.star-light-green:after {
     color: #fff;
     background-color: #18bc9c !important;
 }
+hr.star-light-blue:after {
+    color: #fff;
+    background-color: #233140 !important;
+}
 
 hr.star-primary {
     border-color: #2c3e50;
@@ -174,6 +178,14 @@ header .intro-text .skills {
 .navbar-default{
     background-color: #f05f40;
 }
+
+.form-control{
+    color: white;
+}
+.form-group label{
+    color: #118D75;
+}
+
 .imgTitulo-inline{    
     -webkit-animation-name: sumindo; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
@@ -275,6 +287,8 @@ header .intro-text .skills {
   
   }
 }
+
+
 
 .nomeTituloHeader{    
     -webkit-animation-name: nomeHeaderSumindo; /* Chrome, Safari, Opera */
@@ -453,20 +467,37 @@ header .intro-text .skills {
 .headerCorVermelho{    
     -webkit-animation-name: paraVermelho; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 2s ; /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: forwards;
     animation-name: paraVermelho;
-    animation-duration: 2s ;
+    animation-duration: 1s ;
     animation-fill-mode: forwards;
 }
 
 .headerCorVerde{    
     -webkit-animation-name: paraVerde; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 2s ;  /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: forwards;
     animation-name: paraVerde;
-    animation-duration: 1s;
-   
+    animation-duration: 1s;   
     animation-fill-mode: forwards;
 }
 
+.headerCorAzul{    
+    -webkit-animation-name: paraAzul; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s ;  /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: forwards;
+    animation-name: paraAzul;
+    animation-duration: 1s;   
+    animation-fill-mode: forwards;
+}
+.headerCorAzulVerde{    
+    -webkit-animation-name: paraAzulVerde; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s ;  /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: forwards;
+    animation-name: paraAzulVerde;
+    animation-duration: 1s;   
+    animation-fill-mode: forwards;
+}
 
 @-webkit-keyframes paraVermelho { 
    from {              
@@ -495,7 +526,7 @@ header .intro-text .skills {
 
 @-webkit-keyframes paraVerde { 
    from {
-        background-color: #f05f40;
+        
     }
 
     to {
@@ -505,7 +536,7 @@ header .intro-text .skills {
 }
 @keyframes  paraVerde { 
     from {
-         background-color: #f05f40;
+         
          }
 
     to {
@@ -514,8 +545,47 @@ header .intro-text .skills {
     }
 }
 
+@-webkit-keyframes paraAzul { 
+   from {
+        background-color: #18bc9c;
+    }
 
+    to {
+         background-color: #233140;
+       
+    }
+}
+@keyframes  paraAzul { 
+    from {
+         background-color: #18bc9c;
+         }
 
+    to {
+        background-color: #233140;
+       
+    }
+}
+
+@-webkit-keyframes paraAzulVerde { 
+   from {
+         background-color: #233140; 
+    }
+
+    to {
+        background-color: #18bc9c;
+       
+    }
+}
+@keyframes  paraAzulVerde { 
+    from {
+          background-color: #233140; 
+         }
+
+    to {       
+         background-color: #18bc9c;
+       
+    }
+}
 
 .navbar-default {   
     border-color: transparent;
@@ -575,6 +645,9 @@ section.success a.active {
     section.first {
         padding-top: 75px;
     }
+}
+#contact{
+    background-color: #233140;
 }
 
 #portfolio .portfolio-item {

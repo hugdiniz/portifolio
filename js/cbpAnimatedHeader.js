@@ -100,15 +100,33 @@ var cbpAnimatedHeader = (function() {
 		}
 
 		var tamPortifolio = 1415;
-		if(sy >= tamPortifolio && posicao != 1)
+		var tamSobre = 3415;
+		if(sy >= tamPortifolio && sy < tamSobre && posicao != 1)
 		{
-			classie.remove( header, "headerCorVermelho" );			
-			classie.add( header, "headerCorVerde" );
+			if (posicao == 0)
+			{
+				classie.remove( header, "headerCorVermelho" );			
+				classie.add( header, "headerCorVerde" );
+			}
+			else
+			{
+				classie.remove( header, "headerCorAzul" );
+				classie.add( header, "headerCorAzulVerde" );
+			}			
 			posicao = 1;
+		}
+		else if(sy >= tamSobre && posicao != 2)
+		{
+			classie.remove( header, "headerCorVerde" );	
+			classie.remove( header, "headerCorAzulVerde" );			
+			classie.add( header, "headerCorAzul" );
+			posicao = 2;		
 		}
 		else if (sy < tamPortifolio && posicao != 0)
 		{
-		    classie.remove( header, "headerCorVerde" );			
+		    classie.remove( header, "headerCorVerde" );	
+			classie.remove( header, "headerCorAzulVerde" );	
+			
 			classie.add( header, "headerCorVermelho" );
 			posicao = 0;
 		}	
